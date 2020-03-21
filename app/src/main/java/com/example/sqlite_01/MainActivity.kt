@@ -1,14 +1,11 @@
 package com.example.sqlite_01
 
 import android.content.DialogInterface
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
 import android.view.View
-import android.widget.EditText
-import android.widget.SearchView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import com.example.sqlite_01.`object`.EmpModelClass
 import com.example.sqlite_01.helper.MyAdapter
 import com.example.sqlite_01.model.DatabaseHandler
@@ -116,6 +113,7 @@ class MainActivity : AppCompatActivity() {
             }
     }
 
+    //fungsi delete all
     fun deleteAllRecord(view: View) {
         val dialogBuilder = AlertDialog.Builder(this)
 

@@ -39,6 +39,7 @@ class DatabaseHandler(context: Context):
         onCreate(db)
     }
 
+    //fungsi verifikasi username & password dapat login
     fun checkUser(username: String, password: String): Boolean{
         val columns = arrayOf(U_ID)
 
@@ -67,6 +68,7 @@ class DatabaseHandler(context: Context):
         return false
     }
 
+    //fungsi verifikasi username sudah terpakai atau tidak
     fun checkUser(username: String): Boolean{
         val columns = arrayOf(U_ID)
 
@@ -95,6 +97,7 @@ class DatabaseHandler(context: Context):
         return false
     }
 
+    //fungsi untuk register
     fun addUser(login: LoginModelClass){
         val db = this.writableDatabase
 
